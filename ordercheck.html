@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+<link rel="stylesheet" type="text/css" href="mycss.css">
+
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+	<meta charset="UTF-8">
+	<title>首頁</title>
+	<style>
+		/**{
+			border: 1px solid black;
+		}*/
+	</style>
+
+</head>
+<body style="background-color:#F0F0F0 ">
+	<!-- menu -->
+	 <div class="container">
+  <nav class="navbar navbar-expand navbar-light">
+  <a class="navbar-brand" href="index.html"><img class="LOGO" src="imgs/logo.png"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExample02">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">首頁</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="menu.html">菜單</a>
+      </li>
+      <li>
+        <a href="order.html" class="nav-link">訂單查詢</a>
+      </li>
+      <li>
+        <a href="login.html" class="nav-link">會員登入/註冊</a>
+      </li>
+      <li>
+        <a href="productmanage.html" class="nav-link">管理介面</a>
+      </li>
+      <li>
+        <a href="ordermanage.html" class="nav-link">訂單管理</a>
+      </li>
+
+      <!-- <li class="nav-item">
+        <a class="nav-link" href="contactus.html">聯絡我們</a>
+      </li> -->
+    </ul>
+    
+    <form class="form-inline my-2 my-md-0">
+      <input class="form-control" type="text" placeholder="Search">
+    </form>
+    <a href="shoppingcar.html" class="nav-link"><img class="car_img" src="imgs/carcar.png"></a><input  style="width: 30px;" disabled value="0"  >
+    
+  </div>
+
+</nav>
+<hr style="background: blue;height: 5px">
+</div>
+<!-------------------------------------->
+<!-- main -->
+    <div class="container">
+    <table class="shoppingcar">
+      <tr>
+        <td>訂單編號</td>
+        <td>100000001</td>
+      </tr>
+      <tr style="border-bottom: 1px solid gray;">
+    <!-- 圖片 -->
+    <td style="width: 20%">
+      <img style="height:150px" src="imgs/food1.jpg">
+    </td>
+    <!-- ------------------ -->
+    <!-- 物品名稱 -->
+    <td style="width: 40%">
+      漢堡
+    </td>
+    <!-- ------------------- -->
+    <!-- 價格 -->
+    <td style="width: 20%">
+      $99
+    </td>
+    <!-- ---------------- -->
+    <!-- 按鈕 -->
+    
+    </tr>
+<!-- 物品二 -->
+    <tr style="border-bottom: 1px solid gray;">
+    
+    <td style="width: 20%">
+      <img style="height:150px" src="imgs/food2.jpg">
+    </td>
+    
+    <td style="width: 40%">
+      漢堡
+    </td>
+    
+    <td style="width: 20%">
+      $99
+    </td>
+    </tr>
+    <tr>
+      <td> 
+        
+      </td>
+      <td style="text-align: right;">
+        總金額：
+      </td>
+      <td>
+        $198
+
+      </td>
+      
+    </tr>
+    <!-- -------- -->
+ </table>
+ </div>
+<!------------------------------------->
+
+<script>
+function ChangeBgColor(num){
+      document.getElementById("recommendproduct"+num).style="padding:5px;height: 20em;width: 100%;background-color:#FF7575;";
+    }
+    function ChangeBackBgColor(num){
+      document.getElementById("recommendproduct"+num).style="padding:5px;height: 20em;width: 100%;";
+    }
+  </script>
+</body>
+</html>

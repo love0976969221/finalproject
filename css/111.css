@@ -1,0 +1,43 @@
+.rating > label {
+    color: #ddd;
+    float: right;
+}
+.rating > label:before {
+   	padding: 5px;
+    font-size: 30px;
+    line-height: 1em;
+    display: inline-block;
+    content: "★";
+}
+.rating > input:checked ~ label,
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #FFD700;
+}
+.rating > input:checked ~ label:hover,
+.rating > label:hover ~ input:checked ~ label,
+.rating > input:checked ~ label:hover ~ label {
+    opacity: 0.5;
+}
+
+	
+	.upitem{
+		background-color:#B78A6E;
+		width:80%;
+		height:auto; 
+		margin:10px 0px 0px 135px;
+		padding-bottom: 10px;
+	}
+	.downitem{
+		background-color:#CD813F;
+		width:80%;
+		height:auto; 
+		margin:10px 0px 0px 135px;
+	}
+	.itempic{
+		background-color:#B78A6E;
+		float: left;
+		width:500px;
+		height:500px;
+
+	}
